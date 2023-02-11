@@ -29,7 +29,7 @@
                             <label for="surname" class="col-md-4 col-form-label text-md-end">{{ __('Фамилия') }}</label>
 
                             <div class="col-md-6">
-                                <input id="surname" type="text" class="form-control @error('surname') is-invalid @enderror" name="surname" value="{{ old('surname') }}" required autocomplete="surname" >
+                                <input id="surname" type="text" class="form-control @error('surname') is-invalid @enderror" name="surname" value="{{ old('surname') }}" required autocomplete="surname">
 
                                 @error('surname')
                                     <span class="invalid-feedback" role="alert">
@@ -43,7 +43,7 @@
                             <label for="patronymic" class="col-md-4 col-form-label text-md-end">{{ __('Отчество') }}</label>
 
                             <div class="col-md-6">
-                                <input id="patronymic" type="text" class="form-control @error('patronymic') is-invalid @enderror" name="patronymic" value="{{ old('patronymic') }}" autocomplete="patronymic" >
+                                <input id="patronymic" type="text" class="form-control @error('patronymic') is-invalid @enderror" name="patronymic" value="{{ old('patronymic') }}" autocomplete="patronymic">
 
                                 @error('patronymic')
                                     <span class="invalid-feedback" role="alert">
@@ -57,7 +57,7 @@
                             <label for="login" class="col-md-4 col-form-label text-md-end">{{ __('Логин') }}</label>
 
                             <div class="col-md-6">
-                                <input id="login" type="text" class="form-control @error('login') is-invalid @enderror" name="login" value="{{ old('login') }}" required autocomplete="login" >
+                                <input id="login" type="text" class="form-control @error('login') is-invalid @enderror" name="login" value="{{ old('login') }}" required autocomplete="login">
 
                                 @error('login')
                                     <span class="invalid-feedback" role="alert">
@@ -104,12 +104,12 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="rule" class="col-md-4 col-form-label text-md-end">{{ __('Согласие') }}</label>
+                            <label for="rules" class="col-md-4 col-form-label text-md-end">{{ __('Соглашение') }}</label>
 
                             <div class="col-md-6">
-                                <input id="rule" type="checkbox" @error('rule') is-invalid @enderror" name="rule" required autocomplete="new-rule">
+                                <input id="rules" type="checkbox" @error('rules') is-invalid @enderror" name="rules" value="{{ old('rules') }}" required autocomplete="rules">
 
-                                @error('password')
+                                @error('rules')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
