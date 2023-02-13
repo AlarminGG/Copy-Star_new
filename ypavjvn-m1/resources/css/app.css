@@ -8,3 +8,48 @@
 {
     background:#353535;
 }
+.nav-link
+{
+    background-color: white;
+    color: #353535!important;
+    border-radius: 20%;
+    margin: 10px;
+}
+.nav-link:hover
+{
+    background-color: gray;
+}
+.card-header
+{
+    background:#353535!important;
+    color: white!important;
+}
+.btn
+{
+    background: #353535!important;
+    color: white!important;
+}
+.form-check-input:checked { 
+    background: #353535!important;
+  }
+.rules
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.nav-text p
+{
+    color: white;
+    font-size: 50px;
+}
+.carousel-inner img
+{
+    width: 300px!important;
+    height: 300px;
+}
+.carousel-inner
+{
+    display: flex;
+    justify-content: center;
+}

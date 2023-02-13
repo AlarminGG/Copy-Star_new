@@ -1,3 +1,4 @@
+<link href="/resources/css/app.css" type="text/css" rel="stylesheet">
 @extends('layouts.app')
 
 @section('content')
@@ -53,7 +54,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn">
                                     {{ __('Войти') }}
                                 </button>
 

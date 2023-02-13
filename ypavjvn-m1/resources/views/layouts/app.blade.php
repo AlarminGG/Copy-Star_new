@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="bg-#353535">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/public/img/logo.png">
@@ -31,9 +31,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('welcome') }}">{{ __('О нас') }}</a>
+                            </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Каталог') }}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Где нас найти?') }}</a>
+                            </li>
                     </ul>
-
+                    <div class="nav-text"><p>Copy ☆ Star</p></div>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->

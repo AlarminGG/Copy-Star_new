@@ -1,3 +1,4 @@
+<link href="/resources/css/app.css" type="text/css" rel="stylesheet">
 @extends('layouts.app')
 
 @section('content')
@@ -106,8 +107,8 @@
                         <div class="row mb-3">
                             <label for="rules" class="col-md-4 col-form-label text-md-end">{{ __('Соглашение') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="rules" type="checkbox" @error('rules') is-invalid @enderror" name="rules" value="{{ old('rules') }}" required autocomplete="rules">
+                            <div class="rules col-md-6">
+                                <input class="form-check-input" id="rules" type="checkbox" name="rules" value="{{ old('rules') }}" required autocomplete="rules">
 
                                 @error('rules')
                                     <span class="invalid-feedback" role="alert">
