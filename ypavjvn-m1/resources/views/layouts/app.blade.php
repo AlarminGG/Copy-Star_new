@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="/resources/css/app.css" type="text/css" rel="stylesheet">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Copy Star</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,6 +18,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
+    <header>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
@@ -36,7 +37,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Каталог') }}</a>
+                                <a class="nav-link" href="{{ route('catalog') }}">{{ __('Каталог') }}</a>
                             </li>
 
                             <li class="nav-item">
@@ -62,10 +63,11 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->login }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a href="/public/cart" class="dropdown-item">Корзина</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -82,10 +84,13 @@
                 </div>
             </div>
         </nav>
-
+        </header>
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+    <footer>
+        
+    </footer>
 </body>
 </html>

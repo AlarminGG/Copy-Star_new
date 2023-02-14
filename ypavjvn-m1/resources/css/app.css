@@ -1,9 +1,9 @@
+
 .navbar-brand img
 {
     width: 100px;
     height: auto;
 }
-
 .navbar-light
 {
     background:#353535;
@@ -47,9 +47,35 @@
 {
     width: 300px!important;
     height: 300px;
+    margin-left: -130px;
 }
 .carousel-inner
 {
     display: flex;
     justify-content: center;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon
+{
+    background: black;
+}
+.info
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.info img
+{
+    width: 300px;
+    height: auto;
+    margin-right: 100px;
+}
+.info p
+{
+    padding-top: 50px;
+    font-size: 50px;
+}
+.info h1
+{
+    font-size: 35px;
 }

@@ -22,3 +22,17 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/welcome', function(){return view("welcome");})->name('welcome');
+
+Route::get('/catalog',  [App\Http\Controllers\ProductController::class, 'catalog'])->name('catalog');
+
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'product']);
+
+Route::get('/cart', [App\Http\Controllers\CartController::class, 'show']);
+
+Route::get('/cart/add/{id}', [App\Http\Controllers\CartController::class, 'add']);
+
+Route::get('/cart/minus/{id}', [App\Http\Controllers\CartController::class, 'minus']);
+
+Route::get('/cart/plus/{id}', [App\Http\Controllers\CartController::class, 'plus']);
+
+Route::get('/cart/pay/{id}', [App\Http\Controllers\CartController::class, 'pay']);

@@ -1,6 +1,19 @@
     @extends('layouts.app')
 
     @section('content')
+
+    <div class="container">
+        <div class="info">
+            <div class="info-img"><img src="/public/img/logo.png"></div>
+            <div class="info-text">
+                <p>О нас</p>
+                <h1>Шоппинг в век технологий.</h1>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="container">
         <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -23,10 +36,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+                </div>
         </div>
     </div>
-    
-
     @endsection
-
