@@ -41,7 +41,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Где нас найти?') }}</a>
+                                <a class="nav-link" href="{{ route('wherefindus') }}">{{ __('Где нас найти?') }}</a>
                             </li>
                     </ul>
                     <div class="nav-text"><p>Copy ☆ Star</p></div>
@@ -90,7 +90,10 @@
         </main>
     </div>
     <footer>
-        
+
+            <p>Полезная информация</p>
+            <img src="/public/img/logo.png">
+
     </footer>
 </body>
 </html>

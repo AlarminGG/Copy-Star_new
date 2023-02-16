@@ -23,6 +23,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/welcome', function(){return view("welcome");})->name('welcome');
 
+Route::get('/wherefindus', function(){return view("wherefindus");})->name('wherefindus');
+
 Route::get('/catalog',  [App\Http\Controllers\ProductController::class, 'catalog'])->name('catalog');
 
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'product']);

@@ -1,3 +1,56 @@
+header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+footer
+{
+    background: #353535!important;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p
+{
+    color: white;
+    font-size: 30px;
+}
+footer img
+{
+    width: 100px;
+    height: auto;
+}
+.find-info
+{
+    padding-top: 175px;
+}
+.welcome
+{
+    padding-top: 150px;
+}
+.product
+{
+    padding-top: 150px;
+}
+.home
+{
+    padding-top: 150px;
+}
+.catalog
+{
+    padding-top: 150px;
+}
+.cart
+{
+    padding-top: 150px;
+}
+
+
+
 
 .navbar-brand img
 {
@@ -78,4 +131,38 @@
 .info h1
 {
     font-size: 35px;
+}
+.tovar-img img
+{
+    height: 300px;
+    width: 300px;
+}
+.find-info img
+{
+    margin-top: 75px;
+    border: 8px solid #353535;
+    border-radius: 180%;
+}
+.find-info
+{
+    display: flex;
+    justify-content: space-around;
+}
+.text-info p
+{
+    font-size: 30px;
+    color: #353535;
+}
+
+
+.tovar
+{
+    width: 100%;
+    background: #353535;
+    margin: 30px;
+    padding: 15px;
+}
+.tovar p
+{
+    color: white;
 }
