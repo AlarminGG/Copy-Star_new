@@ -17,20 +17,22 @@
                 </select>
                 <button type="submit">Применить</button>
             </form>
+            <div class="all-tovar">
             @foreach($products as $p)
             <div class="tovar">
-                <div class="tovar-img col-md-6">
-                    <img src="/public/img/{{$p->photo}}" alt="..." class="img-fluid">
+                <div class="tovar-img">
+                    <a href="/public/card/{{$p->id}}"><img src="/public/img/{{$p->photo}}" alt="..." class="img-fluid"></a>
                 </div>
-                <div class="tovar-item col-md-3">
+                <div class="tovar-item">
                     <div class="tovar-name"><p>{{$p->name}}</p></div>
-                    <div class="tovar-item col-md-3">
+                    <div class="tovar-item">
                         <p>{{$p->price}} ₽</p>
                         @guest @else <a href="/public/product/{{$p->id}}">купить</a> @endguest
                     </div>
                 </div>
             </div>
             @endforeach
+            </div>
         </div>
     </div>
     @endsection

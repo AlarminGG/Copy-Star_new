@@ -38,3 +38,5 @@ Route::get('/cart/minus/{id}', [App\Http\Controllers\CartController::class, 'min
 Route::get('/cart/plus/{id}', [App\Http\Controllers\CartController::class, 'plus']);
 
 Route::get('/cart/pay/{id}', [App\Http\Controllers\CartController::class, 'pay']);
+
+Route::get('/card/{id}', [App\Http\Controllers\ProductController::class, 'more'])->name('card');
