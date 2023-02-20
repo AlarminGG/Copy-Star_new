@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="/resources/css/app.css" type="text/css" rel="stylesheet">
+    <link href="{{ asset('app.css')}}" type="text/css" rel="stylesheet">
 
     <title>Copy Star</title>
 

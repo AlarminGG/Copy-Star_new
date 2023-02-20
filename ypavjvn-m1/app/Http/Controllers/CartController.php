@@ -44,10 +44,6 @@ class CartController extends Controller
         $cart = \App\Models\Cart::find($id);
         $product = \App\Models\Product::find($cart->id_product);
         $cart->count++;
-        if($product->count < $cart->count)
-        {
-            $cart->count--;
-        }
         $cart->save();
         return redirect('/cart');
     }
